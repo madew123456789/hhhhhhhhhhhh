@@ -1453,18 +1453,21 @@ function R(min, max) {return min + Math.random() * (max - min);};
             </source>
         </audio>
     </div>  
-    <script>
+     <script>
         let defaultPlayer = document.getElementById("intro_audio");
         
         let storyPlayer = document.getElementById("story_audio");
-       
+        
+        let gifList = ["gif-1","gif-2","gif-3","gif-4-5","gif-6","gif-7-8","gif-9","gif-10-11","gif-12","gif-13","gif-14"];
+        
+        let foldList = ["1","2","3","4-5","6","7-8","9","10-11","12","13","14"];
+        
         let currentIndex;
         
         let currentGifIndex = 1;
         
         let sound = true;
         
-  
         
         
         document.onreadystatechange = function() {
@@ -1529,7 +1532,7 @@ function R(min, max) {return min + Math.random() * (max - min);};
         
           if(sound){
         
-            document.getElementById("soundButton").src = "https://siyathatv.lk/onlinethorana2023/images/sound-cut.png";
+            document.getElementById("soundButton").src = "images/sound-cut.png";
         
             sound = false;
         
@@ -1539,7 +1542,7 @@ function R(min, max) {return min + Math.random() * (max - min);};
         
           else{
         
-            document.getElementById("soundButton").src = "https://siyathatv.lk/onlinethorana2023/images/sound.png";
+            document.getElementById("soundButton").src = "images/sound.png";
         
             sound = true;
         
@@ -1732,8 +1735,10 @@ function R(min, max) {return min + Math.random() * (max - min);};
           }
         
         }*/
-         </script>
-  
+        
+    </script>
+
+	
      </script>
      <script language="JavaScript">
       
